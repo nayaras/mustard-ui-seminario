@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+
+    <head>
+        <title>Exemplo 1</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://unpkg.com/mustard-ui@latest/dist/css/mustard-ui.min.css">
+
+        <!--<link rel="stylesheet" type="text/css" href="../p2/css/estilo.css">-->
+
+    </head>
+
+    <body>
+
+        <section id="header">
+            <h1>Exemplo 1</h1>
+            <p>Página única apresentando estilizações gerais aplicadas a textos, botões,
+                tabelas e formulários, dentre outros</p>
+        </section>
+        <section id="typography">
+            <h2>Tipografia</h2>
+            <h1>Heading 1</h1>
+            <h2>Heading 2</h2>
+            <h3>Heading 3</h3>
+            <h4>Heading 4</h4>
+            <h5>Heading 5</h5>
+            <h6>Heading 6</h6>
+        </section>
+        <section id="progressbar">
+            <h2>Barras de progresso</h2>
+            <div class="progress-bar">
+                <span class="progress-bar-green" style="width: 80%;"></span>
+            </div>
+            <div class="progress-bar striped">
+                <span class="progress-bar-blue" style="width: 40%;"></span>
+            </div>
+            <div class="progress-bar striped animated">
+                <span class="progress-bar-red" style="width: 60%;"></span>
+            </div>
+        </section>
+        <section id="buttons">
+            <h2>Botões</h2>
+            <!-- Styles -->
+            <button class="button-primary">Default</button>
+            <button class="button-primary button-round">Default Round </button>
+            <button class="button-primary-outlined">Outlined</button>
+            <button class="button-primary-outlined button-round">Outlined Round</button>
+            <button class="button-primary-text">Text</button>
+
+            <!-- Sizes -->
+            <button class="button-primary button-large">Large</button>
+            <button class="button-primary">Standard</button>
+            <button class="button-primary button-small">Small</button>
+
+            <!-- Colors -->
+            <button class="button-success">Success</button>
+            <button class="button-info">Info</button>
+            <button class="button-warning">Warning</button>
+            <button class="button-danger">Danger</button>
+        </section>
+        <section id="formfields">
+            <h2>Formulários</h2>
+            <!-- Normal Field -->
+            <div class="form-control">
+                <label>Normal Field</label>
+                <input type="text" placeholder="Enter some info">
+            </div>
+
+            <!-- Invalid Field -->
+            <div class="form-control">
+                <label>Invalid Field</label>
+                <input class="invalid" type="text" placeholder="Enter valid info">
+                <p class="validation-error">Please enter a valid value.</p>
+            </div>
+
+            <!-- Field Grouping -->
+            <div class="form-control-group">
+                <div class="form-control">
+                    <label>Grouped Field 1</label>
+                    <input type="text" placeholder="Enter valid value 1">
+                </div>
+
+                <div class="form-control grow-2x">
+                    <label>Grouped Field 2</label>
+                    <input type="text" placeholder="Enter valid value 2">
+                </div>
+            </div>
+        </section>
+        <section id="pricingtables">
+            <h2>Tabelas de preços</h2>
+            <div class="pricing-table row">
+                <div class="col col-md-6 col-lg-4">
+                    <div class="package">
+                        <p class="package-name">Startup</p>
+                        <hr>
+                        <p class="price">$49</p>
+                        <p class="disclaimer">per user</p>
+                        <hr>
+                        <ul class="features">
+                            <li>Feature 1</li>
+                            <li>Feature 2</li>
+                            <li>Feature 3</li>
+                            <li>Feature 4</li>
+                            <li>Feature 5</li>
+                        </ul>
+                        <button class="button-primary">Get Started</button>
+                    </div>
+                </div>
+                <div class="col col-md-6 col-lg-4">
+                    <div class="package featured">
+                        <p class="package-name">Small Business</p>
+                        <hr>
+                        <p class="price">$99</p>
+                        <p class="disclaimer">per user</p>
+                        <hr>
+                        <ul class="features">
+                            <li>Feature 1</li>
+                            <li>Feature 2</li>
+                            <li>Feature 3</li>
+                            <li>Feature 4</li>
+                            <li>Feature 5</li>
+                        </ul>
+                        <button class="button-primary">Get Started</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="panels">
+            <h2>Painéis</h2>
+            <div class="panel">
+                <div class="panel-head">
+                    <h2 class="panel-title">This is an example of a panel</h2>
+                    <a href="#" class="panel-action">Action 1</a>
+                    <a href="#" class="panel-action">Action 2</a>
+                </div>
+
+                <div class="panel-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, iure nihil nisi repellendus
+                        doloremque harum quis dolor doloribus repudiandae eum repellat, maiores quas! Autem beatae, eos et
+                        neque minus ut mollitia ad earum, rerum
+                        hic dignissimos doloremque repellendus? Iste odit minus, recusandae tenetur, magni ullam nostrum
+                        explicabo. Explicabo, similique, tenetur.</p>
+                    <button class="button-primary">Action 3</button>
+                </div>
+
+                <div class="panel-footer">
+                    <button class="button-secondary">Action 5</button>
+                    <button class="button-tertiary">Action 4</button>
+                </div>
+            </div>
+        </section>
+        <section id="cards">
+            <h2>Cards</h2>
+            <div class="card">
+                <h3 class="card-title">This is a card</h3>
+                <p>This is an example of a card. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est quasi ipsam
+                    sint alias, nemo. Dolore minus aliquid, modi debitis adipisci vel amet, sit officia placeat?</p>
+
+                <ul class="card-actions">
+                    <li>
+                        <a href="#" class="button button-primary-text">Action 1</a>
+                    </li>
+                    <li>
+                        <a href="#" class="button button-primary-text">Action 2</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section id="table-example">
+            <h1 class="h2">Carrinho de Compras</h1>
+            <table>
+              <thead>
+                <tr>
+                  <th>Product Details</th>
+                  <th>Quantity</th>
+                  <th class="align-right">Cost</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <p><strong>Product #1</strong></p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur necessitatibus facilis facere eaque. Molestias, quaerat. Tempore accusantium esse, cum sunt totam quibusdam mollitia vel aliquid.</p>
+                    <p><a href="#">view details</a> | <a href="#">add to wishlist</a></p>
+                  </td>
+                  <td>
+                    <p class="align-center">1</p>
+                  </td>
+                  <td>
+                    <p class="align-right"><strong>$10.00</strong></p>
+                  </td>
+                  <td class="align-right">
+                    <button class="button-primary-outlined">Remove</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p><strong>Product #2</strong></p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur necessitatibus facilis facere eaque. Molestias, quaerat. Tempore accusantium esse, cum sunt totam quibusdam mollitia vel aliquid.</p>
+                    <p><a href="#">view details</a> | <a href="#">add to wishlist</a></p>
+                  </td>
+                  <td>
+                    <p class="align-center">2</p>
+                  </td>
+                  <td>
+                    <p class="align-right"><strong>$24.00</strong></p>
+                  </td>
+                  <td class="align-right">
+                    <button class="button-primary-outlined">Remove</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p><strong>Product #3</strong></p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur necessitatibus facilis facere eaque. Molestias, quaerat. Tempore accusantium esse, cum sunt totam quibusdam mollitia vel aliquid.</p>
+                    <p><a href="#">view details</a> | <a href="#">add to wishlist</a></p>
+                  </td>
+                  <td>
+                    <p class="align-center">1</p>
+                  </td>
+                  <td>
+                    <p class="align-right"><strong>$18.00</strong></p>
+                  </td>
+                  <td class="align-right">
+                    <button class="button-primary-outlined">Remove</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="h6"><strong>Grand Total</strong></p>
+                  </td>
+                  <td>
+                    <p class="align-center">4</p>
+                  </td>
+                  <td>
+                    <p class="align-right"><strong>$76.00</strong></p>
+                  </td>
+                  <td class="align-right">
+                    <button class="button-primary">Checkout</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="align-right">
+          
+            </div>
+        </section>
+
+
+        <section id="flexgrid">
+            <h2>Flex Grid</h2>
+            <div class="container container-small">
+                <p><strong>Specify a size (resize browser for demo):</strong></p>
+                <div class="row">
+                    <div class="col col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                        <div style="background:#eee;height:40px;text-align:center;padding:8px;">
+                            <span class="display-sm-down">.col-xs-12</span>
+                            <span class="display-sm-to-md">.col-sm-6</span>
+                            <span class="display-md-to-lg">.col-md-4</span>
+                            <span class="display-lg-up">.col-lg-3</span>
+                        </div>
+                    </div>
+                    <div class="col col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                        <div style="background:#eee;height:40px;text-align:center;padding:8px;">
+                            <span class="display-sm-down">.col-xs-12</span>
+                            <span class="display-sm-to-md">.col-sm-6</span>
+                            <span class="display-md-to-lg">.col-md-4</span>
+                            <span class="display-lg-up">.col-lg-3</span>
+                        </div>
+                    </div>
+                    <div class="col col-xs-12 col-sm-12 col-md-4 col-lg-3 display-sm-up">
+                        <div style="background:#eee;height:40px;text-align:center;padding:8px;">
+                            <span class="display-sm-to-md">.col-sm-12</span>
+                            <span class="display-md-to-lg">.col-md-4</span>
+                            <span class="display-lg-up">.col-lg-3</span>
+                        </div>
+                    </div>
+                    <div class="col col-xs-12 col-sm-6 col-md-6 col-lg-3 display-md-up">
+                        <div style="background:#eee;height:40px;text-align:center;padding:8px;">
+                            <span class="display-md-to-lg">.col-md-6</span>
+                            <span class="display-lg-up">.col-lg-3</span>
+                        </div>
+                    </div>
+                    <div class="col col-xs-12 col-sm-6 col-md-6 col-lg-6 display-md-up">
+                        <div style="background:#eee;height:40px;text-align:center;padding:8px;">
+                            <span class="display-md-to-lg">.col-md-6</span>
+                            <span class="display-lg-up">.col-lg-6</span>
+                        </div>
+                    </div>
+                    <div class="col col-xs-12 col-sm-6 col-md-4 col-lg-6 display-lg-up">
+                        <div style="background:#eee;height:40px;text-align:center;padding:8px;">
+                            <span class="display-lg-up">.col-lg-6</span>
+                        </div>
+                    </div>
+                </div>
+
+                <p>
+                    <strong>Use an offset:</strong>
+                </p>
+                <div class="row">
+                    <div class="col col-sm-5">
+                        <div style="background:#eee;height:40px;text-align:center;padding:8px;">.col-sm-4</div>
+                    </div>
+                    <div class="col col-sm-5 col-sm-offset-2">
+                        <div style="background:#eee;height:40px;text-align:center;padding:8px;">.col-sm-offset-2</div>
+                    </div>
+                    <div class="col">
+                        <div style="background:#eee;height:40px;text-align:center;padding:8px;">.col</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </body>
+
+</html>

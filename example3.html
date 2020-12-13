@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+    <head>
+        <title>Exemplo 3</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://unpkg.com/mustard-ui@latest/dist/css/mustard-ui.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--<link rel="stylesheet" type="text/css" href="../p2/css/estilo.css">-->
+
+    </head>
+
+    <body>
+        <section id="header">
+            <h1>Exemplo 3</h1>
+            <p>Página única com responsividade aplicada a páginas para ambiente desktop e
+                smartphones</p>
+        </section>
+        <section id="flexgrid">
+            <h2>Flex Grid</h2>
+            <div class="container container-small">
+                <p><strong>Specify a size (resize browser for demo):</strong></p>
+                <div class="row">
+                    <div class="col col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                        <div style="background:#eee;height:40px;text-align:center;padding:8px;">
+                            <span class="display-sm-down">.col-xs-12</span>
+                            <span class="display-sm-to-md">.col-sm-6</span>
+                            <span class="display-md-to-lg">.col-md-4</span>
+                            <span class="display-lg-up">.col-lg-3</span>
+                        </div>
+                    </div>
+                    <div class="col col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                        <div style="background:#eee;height:40px;text-align:center;padding:8px;">
+                            <span class="display-sm-down">.col-xs-12</span>
+                            <span class="display-sm-to-md">.col-sm-6</span>
+                            <span class="display-md-to-lg">.col-md-4</span>
+                            <span class="display-lg-up">.col-lg-3</span>
+                        </div>
+                    </div>
+                    <div class="col col-xs-12 col-sm-12 col-md-4 col-lg-3 display-sm-up">
+                        <div style="background:#eee;height:40px;text-align:center;padding:8px;">
+                            <span class="display-sm-to-md">.col-sm-12</span>
+                            <span class="display-md-to-lg">.col-md-4</span>
+                            <span class="display-lg-up">.col-lg-3</span>
+                        </div>
+                    </div>
+                    <div class="col col-xs-12 col-sm-6 col-md-6 col-lg-3 display-md-up">
+                        <div style="background:#eee;height:40px;text-align:center;padding:8px;">
+                            <span class="display-md-to-lg">.col-md-6</span>
+                            <span class="display-lg-up">.col-lg-3</span>
+                        </div>
+                    </div>
+                    <div class="col col-xs-12 col-sm-6 col-md-6 col-lg-6 display-md-up">
+                        <div style="background:#eee;height:40px;text-align:center;padding:8px;">
+                            <span class="display-md-to-lg">.col-md-6</span>
+                            <span class="display-lg-up">.col-lg-6</span>
+                        </div>
+                    </div>
+                    <div class="col col-xs-12 col-sm-6 col-md-4 col-lg-6 display-lg-up">
+                        <div style="background:#eee;height:40px;text-align:center;padding:8px;">
+                            <span class="display-lg-up">.col-lg-6</span>
+                        </div>
+                    </div>
+                </div>
+
+                <p>
+                    <strong>Use an offset:</strong>
+                </p>
+                <div class="row">
+                    <div class="col col-sm-5">
+                        <div style="background:#eee;height:40px;text-align:center;padding:8px;">.col-sm-4</div>
+                    </div>
+                    <div class="col col-sm-5 col-sm-offset-2">
+                        <div style="background:#eee;height:40px;text-align:center;padding:8px;">.col-sm-offset-2</div>
+                    </div>
+                    <div class="col">
+                        <div style="background:#eee;height:40px;text-align:center;padding:8px;">.col</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="formfields">
+            <div class="col col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                <h2>1. Informações Pessoais</h2>
+                <!-- Normal Field -->
+                <div class="form-control">
+                    <label>Nome</label>
+                    <input type="text" placeholder="Digite seu nome completo">
+                    <label>Endereço</label>
+                    <input type="text" placeholder="Digite seu endereço">
+                </div>
+
+                <!-- Invalid Field -->
+                <div class="form-control">
+                    <label>Celular</label>
+                    <input class="invalid" type="text" placeholder="Digite um número válido">
+                    <p class="validation-error">Somente números</p>
+                </div>
+                <button class="button-primary button-large">Próximo</button>
+                <div class="progress-bar">
+                    <span class="progress-bar-green" style="width: 20%;"></span>
+                </div>
+                
+            </div>
+        </section>
+
+    </body>
+</html>
